@@ -1,8 +1,57 @@
 #searchBar {
   margin: 15px 10px;
 }
-
+.appHeader {
+	margin-left: 175px;	
+}
 .tableWrapper {
   max-height: 400px;
   overflow: auto;
+}
+table {
+	border-collapse: collapse;
+}
+th,td {
+	border: 1px solid #ffffff
+	padding: 10px 15px;
+}
+.building-header {
+	text-align: center;
+}
+form {
+	margin-top: 20px;
+	border: 1px solid black;
+	border-radius: 5px;
+	overflow: hidden;
+}
+fieldset {
+	margin: 10px;
+}
+.listing-info label {
+	color: black;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.searchbar {
+	height: 30px;
+}
+.listing-info input {
+	padding: 5px;
+}
+.listing-name {
+	width: 100%;
+}
+.listing-code {
+	width: 40%;
+}
+.listing-info legend {
+	margin-top: 5px;
+	text-align: center;
+}
+.listing-coordinates-latitude {
+	margin-bottom:2px;
+}
+.listing-address {
+	width: 275%;
 }

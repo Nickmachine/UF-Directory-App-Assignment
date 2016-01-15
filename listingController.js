@@ -7,8 +7,15 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
       Implement these functions in the controller to make your application function 
       as described in the assignment spec. 
      */
-    $scope.addListing = function() {};
-    $scope.deleteListing = function(index) {};
-    $scope.showDetails = function(index) {};
+    $scope.addListing = function(newlisting) {
+		$scope.listings.push(newlisting);
+		$scope.newlisting = {};
+	};
+    $scope.deleteListing = function(index) {
+		$scope.listings.splice(index,1);
+	};
+    $scope.showDetails = function(index) {
+		$scope.selectedListing = $scope.listings[index];
+	};
   }
 ]);
